@@ -25,7 +25,7 @@ export const CounterWidget = () => {
         } else if (count === 0) {
             setColor('black');
         }
-    });
+    }, [count]);
 
     return(
         <div className='widget-container'>

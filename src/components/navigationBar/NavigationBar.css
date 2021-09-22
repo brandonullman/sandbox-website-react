@@ -1,29 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
-
-html {
-    font-size: 16px;
-    font-weight: 500;
-    font-family: 'Rajdhani', sans-serif;
-    background-color: lightgray;
-}
-
-body, html, ul, h1 {
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-h2 {
-    text-align: center;
-    font-size: 3em;
-    padding: 0;
-    margin: 0;
-}
-
 .navigationBar {
     display: flex;
     height: 46px;
@@ -31,11 +5,6 @@ h2 {
     background-color: white;
     box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.2);
     transition: height .5s ease-in-out;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
 }
 
 .nav-button {
@@ -66,18 +35,6 @@ footer {
     border: 1px solid #707070;
     margin-top: 3px;
     border-radius: 2px;
-}
-
-.page-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 15px 15px;
-}
-
-.widget-container h3 {
-    text-align: center;
-    font-size: 2.5em;
 }
 
 .button-container {
