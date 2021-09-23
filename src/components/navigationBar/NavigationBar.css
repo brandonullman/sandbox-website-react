@@ -7,52 +7,94 @@
     transition: height .5s ease-in-out;
 }
 
+.expanded.navigationBar {
+    height: 25em;
+}
+
 .nav-button {
-    padding: .5em .25em;
+    padding-top: .5em;
+    padding-right: .5em;
     cursor: pointer;
+    justify-self: center;
 }
 
 .nav-buttons {
-    display: flex;
-    flex: 1;
-    justify-content: flex-end;
+    display: grid;
+    flex: 0;
+    margin-left: auto;
+    grid-template-columns: repeat(4, auto);
     list-style-type: none;
     font-size: 1.25em;
     text-shadow: .5px .5px #707070;
+    transition: .75s ease-out;
 }
 
-.nav-menu-button-container {
+.expanded.nav-buttons {
+    flex: 1;
+    transition: .75s ease-out;
+    
+}
+
+
+/*
+.nav-buttons {
+    display: grid;
+    flex: 2;
+    grid-template-columns: repeat(4, auto);
+    justify-content: flex-end;
+    list-style-type: none;
+    column-gap: 0;
+    font-size: 1.25em;
+    text-shadow: .5px .5px #707070;
+    margin-right: .5em;
+    margin-left: auto;
+    transition: column-gap 1s ease-in-out;
+}
+
+.expanded.nav-buttons {
+    
+    transition: column-gap 1s ease-in-out;
+    column-gap: 100px;
+    
+}
+*/
+
+
+.nav-expand-container {
     padding-top: .5em;
-    margin-left: .50em;
-    margin-right: .75em;
+    margin-right: 1em;
     cursor: pointer;
+    height: auto;
+    flex: 0;
+    justify-content: flex-end;
 }
 
-.nav-menu-button {
+#nav-expand-1,
+#nav-expand-2, 
+#nav-expand-3 {
+    padding-top: 0;
+    padding-bottom: 0;
     width: 25px;
     height: 4px;
     background-color: #82e7c2;
     border: 1px solid #707070;
     margin-top: 3px;
+    margin-bottom: 3px;
     border-radius: 2px;
 }
 
-.button-container {
-    display: flex;
-    justify-content: center;
+#nav-expand-2 {
+    transition: margin .5s ease-in-out;
 }
 
-nav:hover .nav-menu-button {
-    transition: .5s ease-in-out;
-}
-
-#nav-menu-button-1, #nav-menu-button-2, #nav-menu-button-3 {
-    padding-top: 0;
-    padding-bottom: 0;
+.expanded #nav-expand-2 {
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .nav-bar-name {
     display: flex;
+    justify-content: flex-start;
     width: auto;
     column-gap: .4em;
     font-size: 1.5em;
@@ -66,28 +108,13 @@ nav:hover .nav-menu-button {
     font-weight: 700;
 }
 
-/*ANIMATIONS*/
+/*HOVER ANIMATIONS*/
 
 .nav-button:hover{
     font-weight: 600;
 }
 
-.nav-menu-button-container:hover .nav-menu-button{
-    border: 1px groove black;
-    box-shadow: .5px .5px #707070;
+.nav-expand-container:hover .nav-expand {
+    box-shadow: 0px 0px 0px 1px black;
 }
 
-.change .nav-buttons {
-    flex: 1;
-    justify-content: space-evenly;
-}
-
-.change #nav-menu-button-2 {
-    margin-top: 8px;
-    margin-bottom: 8px;
-    transition: .5s ease-in-out;
-}
-
-nav.change{
-    height: 25em;
-}

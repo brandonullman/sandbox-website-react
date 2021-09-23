@@ -10,13 +10,9 @@
     border-style: groove;
 }
 
-.button:hover {
-    color: white;
-    border-color: white;
-}
-
-.button:active {
-    box-shadow: inset 0px 0px 50px -25px #000000;
+.button-container {
+    display: flex;
+    justify-content: center;
 }
 
 #value {
@@ -24,4 +20,15 @@
     justify-content: center;
     font-size: 2.5em;
     margin-bottom: 1rem;
+}
+
+/*HOVER ANIMATIONS*/
+
+.button:hover {
+    color: white;
+    border-color: white;
+}
+
+.button:active {
+    box-shadow: inset 0px 0px 50px -25px #000000;
 }
