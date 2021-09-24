@@ -13,7 +13,8 @@
 
 .nav-button {
     padding-top: .5em;
-    padding-right: .5em;
+    padding-right: .25em;
+    padding-left: .25em;
     cursor: pointer;
     justify-self: center;
 }
@@ -26,7 +27,7 @@
     list-style-type: none;
     font-size: 1.25em;
     text-shadow: .5px .5px #707070;
-    transition: .75s ease-out;
+    transition: .75s ease-in-out;
 }
 
 .expanded.nav-buttons {
@@ -35,34 +36,10 @@
     
 }
 
-
-/*
-.nav-buttons {
-    display: grid;
-    flex: 2;
-    grid-template-columns: repeat(4, auto);
-    justify-content: flex-end;
-    list-style-type: none;
-    column-gap: 0;
-    font-size: 1.25em;
-    text-shadow: .5px .5px #707070;
-    margin-right: .5em;
-    margin-left: auto;
-    transition: column-gap 1s ease-in-out;
-}
-
-.expanded.nav-buttons {
-    
-    transition: column-gap 1s ease-in-out;
-    column-gap: 100px;
-    
-}
-*/
-
-
 .nav-expand-container {
     padding-top: .5em;
     margin-right: 1em;
+    margin-left: .75em;
     cursor: pointer;
     height: auto;
     flex: 0;

@@ -1,21 +1,23 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { NavigationBar, Footer, HomePage, AboutPage, ContactPage, WidgetsPage } from "./";
 import logo from './logo.svg';
-import { NavigationBar } from './components/navigationBar/NavigationBar';
-import { CounterWidget } from './components/counterWidget/CounterWidget';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div>
-      <nav>
+      <Router>
         <NavigationBar />
-      </nav>
-      <main>
-        <CounterWidget />
-      </main>
-      <footer>
-        Website Made by Brandon U.
-      </footer>
+        <Switch>
+          <Route path='/' exact component={() => <HomePage />} />
+          <Route path='/about' exact component={() => <AboutPage />} />
+          <Route path='/widgets' exact component={() => <WidgetsPage />} />
+          <Route path='/contact' exact component={() => <ContactPage />} />
+          <Route path='/widgets' exact component={() => <WidgetsPage />} />
+        </Switch>
+        <Footer />
+      </Router>
     </div>
   );
 }
