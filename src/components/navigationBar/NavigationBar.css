@@ -21,6 +21,7 @@
 }
 
 .nav-buttons {
+    margin: 0;
     display: grid;
     flex: 0;
     margin-left: auto;
@@ -77,9 +78,13 @@
     height: min-content;
     column-gap: .4em;
     font-size: 1.5em;
-    margin-left: .5em;
     text-shadow: 1.5px 1.5px #707070;
     cursor: pointer;
+    margin-left: .5em;
+}
+
+.nav-bar-name h1 {
+    margin: 0;
 }
 
 #nav-sandbox {
