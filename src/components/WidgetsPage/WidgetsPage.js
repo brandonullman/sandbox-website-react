@@ -1,9 +1,11 @@
 import React from "react";
+import { CounterWidget } from './../CounterWidget/CounterWidget';
 
 const WidgetsPage = () => {
   return (
-    <div>
-        <h1>Widgets</h1>
+    <div className='widget-container'>
+        <h2>Widgets</h2>
+        <CounterWidget />
         <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text

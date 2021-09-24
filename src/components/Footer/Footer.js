@@ -6,7 +6,7 @@ const Footer = () => {
       <footer>
         <div>
           <p>
-            Website Made by Brandon U :)
+            Website Made by Brandon U ♥
           </p>
         </div>
       </footer>

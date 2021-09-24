@@ -3,7 +3,7 @@ import React from "react";
 const ContactPage = () => {
   return (
     <div>
-        <h1>Contact</h1>
+        <h2>Contact</h2>
         <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
