@@ -1,27 +1,58 @@
-.button {
-    margin-left: 5px;
-    margin-right: 5px;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 16px;
-    font-family: 'Rajdhani', sans-serif;
+#coin {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin: auto auto;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+#coin div {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: inset 0 0 45px rgba(0, 0, 0, 0.300);
+    border-style: solid;
+    border-width: 3px;
+}
+
+#coin p {
+    font-size: 1.5em;
     font-weight: 600;
+}
+
+.side-a {
     background-color: #82e7c2;
-    border-style: groove;
+    z-index: 100;
 }
 
-.button-container {
-    display: flex;
-    justify-content: center;
+.side-b {
+    background-color: #708090;
+    transform: rotateY(-180deg);
 }
 
-/*HOVER ANIMATIONS*/
-
-.button:hover {
-    color: white;
-    border-color: white;
+#coin.heads {
+    animation: flipHeads 4s forwards;
 }
 
-.button:active {
-    box-shadow: inset 0px 0px 50px -25px #000000;
+#coin.tails {
+    animation: flipTails 4s forwards;
+}
+
+@keyframes flipHeads {
+    from {
+        transform: rotateY(0deg);
+    } to {
+        transform: rotateY(1800deg);
+    }
+}
+
+@keyframes flipTails {
+    from {
+        transform: rotateY(0deg);
+    } to {
+        transform: rotateY(1980deg);
+    }
 }

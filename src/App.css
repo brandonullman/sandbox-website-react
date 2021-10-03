@@ -5,6 +5,10 @@ h2 {
     margin-bottom: 0;
     padding-bottom: 0;
 }
+
+nav {
+    margin-bottom: 46px;
+}
   
 footer {
     display: flex;
@@ -13,15 +17,69 @@ footer {
     justify-content: center;
 }
 
+.button {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: auto;
+    padding-bottom: auto;
+    border-radius: 5px;
+    height: auto;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    background-color: #82e7c2;
+    border-style: groove;
+}
+
+.button-container {
+    display: flex;
+    bottom: 0;
+    justify-content: center;
+}
+
 .widgetPage-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(3, 400px);
     gap: 15px 15px;
+}
+
+.widget-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.widget-container h6 {
+    display: flex;
+    font-size: 1em;
+    justify-content: center;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.widget-container p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100%;
 }
     
 .widget-container h3 {
     text-align: center;
     font-size: 2.5em;
+}
+
+/*HOVER ANIMATIONS*/
+
+.button:hover {
+    color: white;
+    border-color: white;
+}
+
+.button:active {
+    box-shadow: inset 0px 0px 50px -25px #000000;
 }
   
