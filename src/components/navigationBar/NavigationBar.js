@@ -4,11 +4,11 @@ import './NavigationBar.css';
 
 const NavigationBar = (props) => {
 
-        const [expand, setExpand] = useState(false);
+    const [expand, setExpand] = useState(false);
 
-        const handleClick = () => {
-            setExpand(expand => !expand);
-        };
+    const handleClick = () => {
+        setExpand(expand => !expand);
+    };
 
     return (
         <div>
