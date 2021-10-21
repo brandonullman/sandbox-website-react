@@ -5,11 +5,11 @@ const FAQ = ({faq, index, toggleFAQ}) => {
         <div
             className={'faq ' + (faq.open ? 'open' : '')}
             key={index}
-            onClick={() => toggleFAQ(index)}
-        >  
+            >  
             <div className='faq-question'>
                 {faq.question}
-                <div className='faq-button'>
+                <div className='faq-button'
+                    onClick={() => toggleFAQ(index)}>
                     <div className='faq-button1'></div>
                     <div className='faq-button2'></div>
                 </div> 
