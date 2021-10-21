@@ -1,0 +1,72 @@
+.faqs {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.faqs .faq {
+    margin: 15px;
+    padding: 15px;
+    background-color: #FFF;
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.faqs .faq .faq-question {
+    font-weight: 600;
+    display: flex;
+    font-size: 1.5em;
+}
+
+.faqs .faq .faq-button {
+    display: flex;
+    margin-left: auto;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    border: 2px solid #444444;
+    background: #707070;
+    background-position: center;
+    transition: all 0.4s ease;
+    justify-content: center;
+    align-items: center;
+}
+
+.faqs .faq .faq-answer {
+    position: relative;
+    opacity: 0;
+    top: -10px;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: all 0.25s ease;
+}
+
+.faqs .faq .faq-question .faq-button .faq-button1,
+.faqs .faq .faq-question .faq-button .faq-button2 {
+    position: absolute;
+    display: flex;
+    width: 20px;
+    height: 4px;
+    background-color: #82e7c2;
+    transition: all 0.4s ease;
+}
+
+.faqs .faq .faq-question .faq-button .faq-button2 {
+    transform: rotate(90deg);
+}
+
+.faqs .faq.open .faq-question .faq-button .faq-button1 {
+    transform: rotate(45deg);
+    transition: all 0.4s ease;
+} 
+
+.faqs .faq.open .faq-question .faq-button .faq-button2 {
+    transform: rotate(135deg);
+    transition: all 0.4s ease;
+} 
+
+.faqs .faq.open .faq-answer {
+    max-height: 1000px;
+    transform: translateY(15px);
+    opacity: 1;
+}
