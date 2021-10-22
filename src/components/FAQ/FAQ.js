@@ -4,8 +4,7 @@ const FAQ = ({faq, index, toggleFAQ}) => {
     return (
         <div
             className={'faq ' + (faq.open ? 'open' : '')}
-            key={index}
-            >  
+            key={index}>  
             <div className='faq-question'>
                 {faq.question}
                 <div className='faq-button'

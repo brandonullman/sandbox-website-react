@@ -19,14 +19,17 @@ const FaqContainer = () => {
       answer: 'YOU BETCHA!',
       open: false
     },
+    {
+      question: 'Should you hire me?',
+      answer: '100%',
+      open: false
+    },
   ]);
 
   const toggleFAQ = index => {
     setFaqs(faqs.map((faq, i) => {
       if (i === index) {
         faq.open = !faq.open;
-      } else {
-        faq.open = false;
       }
       return faq;
     }))

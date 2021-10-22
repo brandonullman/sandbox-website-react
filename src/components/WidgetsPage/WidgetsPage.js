@@ -1,6 +1,7 @@
 import React from "react";
 import { CounterWidget } from './../CounterWidget/CounterWidget';
 import { CoinFlipperWidget } from './../CoinFlipperWidget/CoinFlipperWidget';
+import { ExpenseWidget } from './../ExpenseWidget/ExpenseWidget';
 
 const WidgetsPage = () => {
   return (
@@ -9,10 +10,8 @@ const WidgetsPage = () => {
       <div className='widgetPage-container'>
           <CounterWidget />
           <CoinFlipperWidget />
+          <ExpenseWidget />
       </div>
-      <p>
-          WIDGETS!
-      </p>
     </div>
   );
 }
